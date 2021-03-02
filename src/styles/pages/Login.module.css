@@ -1,0 +1,160 @@
+.container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--blue);
+}
+
+@media only screen and (min-width: 1300px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding-right: 12.5rem;
+  }
+
+  .container::before {
+    content: " ";
+    width: 44rem;
+    height: 42rem;
+
+    position: fixed;
+    left: -0.5rem;
+
+    background: url("/images/login.png") no-repeat center;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .container > div {
+    height: 56rem;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .container div footer input {
+    width: 18rem;
+  }
+
+  .container div footer button {
+    width: 18rem;
+  }
+
+  .container div strong {
+    margin-bottom: 1rem;
+  }
+
+  .container div section {
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container > div {
+    align-items: center;
+  }
+
+  .container div section {
+    width: 18rem;
+  }
+
+  .container div footer {
+    flex-direction: column;
+  }
+
+  .container div footer input {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .container div footer button {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .container div header img {
+    width: 250px;
+  }
+
+  .container div section {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .container div footer input {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .container div footer button {
+    width: 5rem;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 26rem;
+}
+
+.container div header {
+  margin-bottom: 6rem;
+}
+
+.container div header img {
+  width: 300px;
+}
+
+.container div strong {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+.container div section {
+  display: flex;
+  align-items: center;
+
+  color: var(--text-highlight);
+}
+
+.container div section img {
+  margin-right: 1rem;
+}
+
+.container div footer {
+  display: flex;
+}
+
+.container div footer input {
+  height: 5rem;
+
+  background: linear-gradient(180deg, #4953b8 0%, rgba(73, 83, 184, 0.2) 100%);
+  border: 0;
+  color: var(--text-highlight);
+  font-size: 1.25rem;
+
+  padding: 1.4rem 0.5rem 1.4rem 1.9rem;
+}
+
+.container div footer input::placeholder {
+  color: var(--text-highlight);
+}
+
+.container div footer input:focus {
+  outline-style: double;
+}
+
+.container div footer button {
+  height: 5rem;
+
+  border: 0;
+  background: var(--blue-dark);
+}
