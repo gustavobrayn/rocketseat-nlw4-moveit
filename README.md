@@ -1,4 +1,6 @@
-# Moveit
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gbrayn/rocketseat-nlw4-react-moveit/cb3d458ae48756e3bc8b0ad84a10b7058311f1d0/public/images/logo-full.svg">
+</p>
 
 Moveit foi desenvolvido durante a semana **NLW#4** da **Rockeseat**.
 
